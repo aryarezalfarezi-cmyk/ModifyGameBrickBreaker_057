@@ -49,3 +49,27 @@ def save_high_score(score):
         pass
 
 
+# ==========================================
+# STRIKER CLASS
+# ==========================================
+
+class Striker:
+    def __init__(self, canvas):
+        self.canvas = canvas
+        self.width = 125
+        self.height = 16
+        self.speed = 9
+        self.x = WIDTH // 2
+        self.y = HEIGHT - 90
+
+        self.id = canvas.create_rectangle(
+            self.x - self.width // 2,
+            self.y,
+            self.x + self.width // 2,
+            self.y + self.height,
+            fill=CYAN,
+            outline=WHITE,
+            width=2
+        )
+
+    
