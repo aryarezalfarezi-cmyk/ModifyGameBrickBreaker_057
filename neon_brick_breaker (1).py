@@ -29,3 +29,13 @@ GREEN = "#46f5a5"
 HIGH_SCORE_FILE = Path("neon_highscore.json")
 
 
+def load_high_score():
+    try:
+        data = json.loads(
+            HIGH_SCORE_FILE.read_text(encoding="utf-8")
+        )
+        return int(data.get("high_score", 0))
+    except (OSError, ValueError, TypeError):
+        return 0
+
+
