@@ -72,4 +72,11 @@ class Striker:
             width=2
         )
 
-    
+    def update(self, direction):
+        self.x += direction * self.speed
+        self.x = max(
+            self.width // 2 + 12,
+            min(WIDTH - self.width // 2 - 12, self.x)
+        )
+
+        
