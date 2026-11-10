@@ -5,4 +5,27 @@ import math
 import json
 from pathlib import Path
 
+# ==========================================
+# NEON BRICK BREAKER
+# Python 3.15.2 + Tkinter
+# Object Oriented Programming
+# ==========================================
+
+WIDTH = 900
+HEIGHT = 650
+FPS = 16
+
+BG = "#0a0c1e"
+PANEL = "#121630"
+WHITE = "#f0f5ff"
+CYAN = "#28e1ff"
+BLUE = "#4173ff"
+PURPLE = "#b44bff"
+PINK = "#ff419f"
+YELLOW = "#ffdc4b"
+RED = "#ff4b5a"
+GREEN = "#46f5a5"
+
+HIGH_SCORE_FILE = Path("neon_highscore.json")
+
 
