@@ -39,3 +39,13 @@ def load_high_score():
         return 0
 
 
+def save_high_score(score):
+    try:
+        HIGH_SCORE_FILE.write_text(
+            json.dumps({"high_score": score}, indent=4),
+            encoding="utf-8"
+        )
+    except OSError:
+        pass
+
+
